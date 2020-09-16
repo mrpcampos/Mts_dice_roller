@@ -3,14 +3,14 @@ import random
 
 class Roller:
     @staticmethod
-    def dx(x_lados):
-        """Rola um dado de x lados e retorna o resultado."""
-        return random.randint(1, x_lados)
+    def dy(y):
+        """Rola um dado de y lados e retorna o resultado."""
+        return random.randint(1, y)
 
     @staticmethod
     def xdy(x, y):
         """Rola x dados de y lados e retorna o resultado."""
-        return sum(Roller.dx(y) for _ in range(1, x + 1))
+        return sum(Roller.dy(y) for _ in range(1, x + 1))
 
 
 class DiceSet:
@@ -44,7 +44,7 @@ class DiceSet:
         for n_lados, n_dados in self._dict_dados_quantidade.items():
             dados = []
             for _ in range(1, n_dados + 1):
-                rolada = Roller.dx(n_lados)
+                rolada = Roller.dy(n_lados)
                 dados.append(rolada)
                 soma += rolada
             self.dict_valores_ultima_rolagem[n_lados] = dados
