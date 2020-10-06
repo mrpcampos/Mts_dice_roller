@@ -1,0 +1,11 @@
+Na primeira (e possívelmente única) versão as seguintes coisas deverão ser possíveis:
+- criar n conjuntos de dados e adicionar diferentes tipos de dados nele
+- rolar esse conjuto de dados e conseguir o valor de cada dado e o valor total
+- remover um conjunto de dados das opções
+- realizar uma simulação com amostragem sendo um valor de 1000 a 1000000 para calcular média, desvio padrão, valor máximo e minimo atingido (o atingido empiricamente, não o máximo teórico)
+- salvar e abrir novamente os conjuntos de dados e a ultima simulação de cada conjunto (todos os conjutos são salvos juntos, em um "pacote" chamado de mesa)
+
+Coisas que podem ser adicionadas:
+- na versão atual uma vez que um dado é adicionado não pode ser removido do conjunto (ainda pode ser zerado, o que na pratica da no mesmo, mas visualmente ainda aparece)
+- existem duas seções na parte de estatística que podem ser adicionados gráficos relativos a rolagem
+- uma seção de configuração para mudar limites como o limite de amostragem e de dados por conjunto, esses limites existem para não ocasionar problemas, mas ter a opção de assumir o risco e altera-los pode ser interessante
